@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap");
+@import 
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+
+  font-family: "Bitter", serif;
+  line-height: 1.4;
+  color: #03312e;
+background: #ffa900;
+
+
+}
+a {
+  color: #000;
+}
+
+ul {
+    list-style: circle;
+}
+p {
+  margin: 5px 0;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+}
+button {
+  background-color: WHITE;
+  color: black;
+  border: 2px solid WHITE;
+}
+
+h1,
+h2
+ {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: min(70%, 500px);
+    text-align: center;
+
+
+}
+
+.chef {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: min(250px);
+}
+.block {
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    border-radius: 25px;
+    width: min(500px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.479);
+}
+.smallBlock {
+    display: flex;
+    margin: auto;
+    border-radius: 50px;
+    color:rgba(255, 255, 255);
+    border-color: white;
+    border-width: .5rem;
+    font-size: 2rem;
+}
+.img {
+    display: block;
+    margin:auto;
+    border-radius: 25px;
+    width: min(70%, 6500px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.479);
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
+.title { 
+    display: block;
+    margin: auto;
+    width: min(70%, 450px)
+}
