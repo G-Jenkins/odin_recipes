@@ -9,6 +9,76 @@
   </head>
   <body>
 
+
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="/picsRecipe/chef-hat.png" alt="Starbucks" />
+          </a>
+        </div>
+
+        <ul class="navbar-nav-left">
+          <li>
+            <a href="https://www.theodinproject.com/">Odin Project</a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Japanese_cuisine">Japanese Cuisine</a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Mexican_cuisine">Mexican Magic</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav-right">
+          <li>
+            <a href="#">
+              <img src="/picsRecipe/marker.svg" alt="" />
+              <span>Find us</span>
+            </a>
+          </li>
+          <li><button class="btn btn-dark-outline">Reservations</button></li>
+          <li><button class="btn btn-dark">Contact</button></li>
+        </ul>
+
+        <!-- Hamburger Menu -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+      <ul>
+        <li>
+          <a href="https://www.theodinproject.com/">Odin Project</a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Japanese_cuisine">Japanese Cuisine</a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Mexican_cuisine">Mexican Magic</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu-bottom">
+        <button class="btn btn-dark-outline">Reservations</button>
+        <button class="btn btn-dark">Contact</button>
+        <div>
+          <a href="#">
+            <img src="/picsRecipe/marker.svg" alt="" />
+            <span>Find us</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+
+      
     <nav class="navbar">
       <div class="navbar-container">
           <div class="navbar-brand">
@@ -17,22 +87,33 @@
               </a>
           </div>
           <ul class="navbar-nav-left">
-              <li><a href="#">Odin Project</a></li>
-              <div class="dropdown">
-                  <button class="dropbtn">Cuisine
-                      <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                      <a href="#">Japanese Classics</a>
-                      <a href="#">Mexican Magic</a>
-                      <a href="#">Mom's Kitchen</a>
-                      <a href="#">French Francy</a>
-                  </div>
-              </div>
-          </ul>
-          <div>
+              <li><a href="https://www.theodinproject.com">Odin Project</a></li>
+              
+          <div class="dropdown">
+            <button class="dropbtn">Cuisine
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://en.wikipedia.org/wiki/Japanese_cuisine">Japanese Classics</a>
+                <a href="https://en.wikipedia.org/wiki/Mexican_cuisine">Mexican Magic</a>
+                <a href="https://www.merriam-webster.com/dictionary/home%20cooking">Mom's Kitchen</a>
+                <a href="https://en.wikipedia.org/wiki/French_cuisine">French Francy</a>
+            </div>
             
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Chefs
+              <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+              <a href="https://en.wikipedia.org/wiki/Anthony_Bourdain">Bourdain</a>
+              <a href="https://en.wikipedia.org/wiki/Heston_Blumenthal">Blumenthal</a>
+              <a href="https://foodism.co.uk/features/interviews/tokimeite-yoshihiro-murata-london-japanese-cuisine/">Murata</a>
+              <a href="https://en.wikipedia.org/wiki/David_Mu%C3%B1oz_(chef)">Muñoz</a>
+              <a href="https://en.wikipedia.org/wiki/Ren%C3%A9_Redzepi">Redzepi</a>
+              <a href="https://en.wikipedia.org/wiki/Seiji_Yamamoto">Yamamoto</a>
           </div>
+      </div>
               <div class="dropdown">
                   <button class="dropbtn">Top Recipes
                       <i class="fa fa-caret-down"></i>
@@ -52,48 +133,50 @@
                       <a href="#">Coq au Vin</a>
                   </div>
               </div>
+              
           </ul>
-              <div class="dropdown">
-                  <button class="dropbtn">Chefs
-                      <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                      <a href="https://en.wikipedia.org/wiki/Anthony_Bourdain">Bourdain</a>
-                      <a href="https://en.wikipedia.org/wiki/Heston_Blumenthal">Blumenthal</a>
-                      <a href="https://foodism.co.uk/features/interviews/tokimeite-yoshihiro-murata-london-japanese-cuisine/">Murata</a>
-                      <a href="https://en.wikipedia.org/wiki/David_Mu%C3%B1oz_(chef)">Muñoz</a>
-                      <a href="https://en.wikipedia.org/wiki/Ren%C3%A9_Redzepi">Redzepi</a>
-                      <a href="https://en.wikipedia.org/wiki/Seiji_Yamamoto">Yamamoto</a>
-                  </div>
-              </div>
-          </ul>
+            
+      
+          <div>
+
+          </div>
+
+
           <ul class="navbar-nav-right">
           
              <li><button class="btn btn-dark-outline">Podcast</button></li>
-             <li><button class="btn btn-dark">Signup</button></li>
-             <li><button class="btn btn-dark-outline">Placeholder</button></li>
+             <li><button class="btn btn-dark">Reservations</button></li>
+             <li><button class="btn btn-dark-outline">Newsletter</button></li>
           </ul>
+          <button class="hamburger" type = "button" id="menu-btn">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
       </div>
   </nav>
-  <div class="inspo">
-
-    <h2>inspired by...</h2>
-  </div>
-      
-       <img class = "img1" src="/picsRecipe/theOdinProject.png" alt="chef" >
-       <h1>Odin's Recipes</h1>
+-->  
+       <div class = "odinTitle">
+        <h1>Odin's Recipes</h1>
+       </div>
     <div class="block" id = "contents">
-      <ul>
-        <h2>Mexican</h2>
-        <li>    <a href="/odin-recipes/chilaquiles.html">Chilaquiles<a>
-        </li>
-        <li>      <a href="/odin-recipes/enchiladas.html">Enchiladas</a>
-        </li>
-        <li>      <a href="/odin-recipes/camarones.html">Camarones a la Diabla</a>
-        </li>
+      
+      <div class="block1">
+        <ul>
+          <h2>Mexican</h2>
+          <li>    <a href="/odin-recipes/chilaquiles.html">Chilaquiles<a>
+          </li>
+          <li>      <a href="/odin-recipes/enchiladas.html">Enchiladas</a>
+          </li>
+          <li>      <a href="/odin-recipes/camarones.html">Camarones a la Diabla</a>
+          </li>
+  
+          <li><a href="/odin-recipes/machaca.html">Machaca con huevo</a></li>
+        </ul>
+      </div>
+      <div class="v1"></div>
+      <div class="block2">
 
-        <li><a href="/odin-recipes/machaca.html">Machaca con huevo</a></li>
-      </ul>
         <ul>
           <h2>Japanese</h2>
         <li>      <a href="/odin-recipes/miso-soup.html">Miso Soup</a>
@@ -103,9 +186,45 @@
         <li><a href="/odin-recipes/nikujaga.html">Nikujaga</a></li>
         <li><a href="/odin-recipes/sukiyaki.html">Sukiyaki</a></li>
       </ul>
+      </div>
+  
+  
  
 
     </div>
+    <div class="inspo">
 
+      <h2>inspired by...</h2>
+    </div>
+        
+         <img class = "img1" src="/picsRecipe/theOdinProject.png" alt="chef" >
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="social">
+          <a href="https://spotify.com">
+            <img src="/picsRecipe/social-spotify.svg" alt="" />
+          </a>
+          <a href="https://facebook.com">
+            <img src="/picsRecipe/social-facebook.svg" alt="" />
+          </a>
+          <a href="https://pinterest.com">
+            <img src="/picsRecipe/social-pinterest.svg" alt="" />
+          </a>
+          <a href="https://instagram.com">
+            <img src="/picsRecipe/social-instagram.svg" alt="" />
+          </a>
+          <a href="https://youtube.com">
+            <img src="/picsRecipe/social-youtube.svg" alt="" />
+          </a>
+          <a href="https://twitter.com">
+            <img src="/picsRecipe/social-twitter.svg" alt="" />
+          </a>
+        </div>
+        <p>© 2022 Damokles Inc. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
