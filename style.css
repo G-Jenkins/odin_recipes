@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap");
 
-
 html {
   min-height: 100%;
 }
@@ -30,8 +29,9 @@ a {
 }
 
 ul {
-  list-style: circle;
+  list-style: disc;
 }
+
 p {
   margin: 5px 0;
   line-height: 1.7;
@@ -76,14 +76,16 @@ h2 {
   width: 768px;
   margin-top: 3em;
   margin-bottom: 6em;
+  list-style: square;
 }
 
 .block1 {
-  margin-right: 120px;
+  padding-right: 50px;
+  margin-right: 20px;
 }
 
 .block2 {
-    margin-right: 25px;;
+  margin-right: 25px;
 }
 .smallBlock {
   display: flex;
@@ -134,24 +136,25 @@ a.button {
   width: min(70%, 450px);
 }
 
-
 .center {
-    display: flex;
-    align-items: center;
-    border-right: 5px, solid green;
-    height: 400px;;
+  display: flex;
+  align-items: center;
+  border-right: 5px, solid green;
+  height: 400px;
 }
 
 .v1 {
-    border-left: 1px solid black;
-    height: 300px;
-    padding-right: 25px;
+  border-left: 1px solid black;
+  height: 300px;
+  padding-right: 25px;
 }
-
 
 /* Navbar */
 .navbar {
-  width: auto;
+  font-family: "Norse";
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  width: full;
   height: auto;
   background-color: #fff;
   padding: 0px;
@@ -201,12 +204,14 @@ a.button {
 .navbar-nav-right li:first-child a {
   display: flex;
   align-items: center;
+  list-style: none;
+  padding-right: 4px;
 }
 
 .navbar-nav-right img {
   height: 20px;
   width: 20px;
-  margin-right: 10px;
+  margin-right: 0px;
 }
 
 .navbar-nav-right li:nth-child(2) {
@@ -244,8 +249,6 @@ a.button {
   margin: 40px auto;
 }
 
-
-
 /* Buttons */
 .btn {
   cursor: pointer;
@@ -282,9 +285,6 @@ a.button {
 .btn-dark:hover {
   background-color: #333;
 }
-
-
-
 
 /* Hamburger Menu Icon */
 .hamburger {
@@ -444,11 +444,10 @@ a.button {
   }
 }
 
-
 @media (max-width: 600px) {
   .block {
     font-size: 18px;
-    width: 500px;
+    width: 450px;
   }
 
   .inspo {
@@ -462,7 +461,7 @@ a.button {
 
 @media (min-width: 768px) {
   .block {
-    font-size: 18px;
+    font-size: 23px;
   }
 
   .inspo {
