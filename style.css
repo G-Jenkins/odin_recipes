@@ -69,11 +69,9 @@ h2 {
   text-transform: uppercase;
   margin: auto;
   border-radius: 15px;
-  border: 1px solid white;
-
-  padding: 25px;
-
-  width: 768px;
+  border: 2px solid white;  
+  padding: 2px;
+  width: auto;
   margin-top: 3em;
   margin-bottom: 6em;
   list-style: square;
@@ -81,7 +79,6 @@ h2 {
 
 .block1 {
   padding-right: 50px;
-  margin-right: 20px;
 }
 
 .block2 {
@@ -220,7 +217,7 @@ a.button {
 
 /* Footer & Social */
 .footer-container {
-  width: 100%;
+  width: auto;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 30px 30px;
